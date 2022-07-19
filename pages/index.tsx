@@ -5,6 +5,7 @@ import Image from "next/image";
 import Header from "../components/Header";
 import SingleBlog from "../components/SingleBlog";
 import { BLOGS_QUERY } from "../graphqlcms/Query";
+import Footer from "../components/Fotter";
 
 const Home: NextPage = () => {
   const { loading, error, data } = useQuery(BLOGS_QUERY);
@@ -26,6 +27,7 @@ const Home: NextPage = () => {
           ))}
         </div>
       </main>
+      <Footer />
     </div>
   );
 };
