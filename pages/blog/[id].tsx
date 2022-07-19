@@ -5,8 +5,8 @@ import { SINGLE_BLOGS_QUERY } from "../../graphqlcms/Query";
 import { Markup } from "interweave";
 import Footer from "../../components/Fotter";
 
-const Blog = ({ data: any }) => {
-  const post = data?.data.post;
+const Blog = ({ data }: any) => {
+  const post: any = data?.data.post;
   return (
     <div>
       <Header title="Blog Page" />
